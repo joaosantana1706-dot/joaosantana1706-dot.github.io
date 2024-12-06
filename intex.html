@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h2>Formulário HTML</h2>
-    <form action="">
-      <label for="fname">Primeiro nome:</label><br>
-      <input type="text" id="fname" name="fname" value="Ariangelo"><br>
-      
-      <label for="lname">Sobrenome:</label><br>
-      <input type="text" id="lname" name="lname" value="Hauer Dias"><br>
-      
-      <input type="submit" value="Confirmar">
-    </form>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário HTML</title>
+</head>
+<body>
+  <h2>Formulário HTML</h2>
+  <form action="/action_page.php" method="post">
+    <label for="fname">Primeiro nome:</label><br>
+    <input type="text" id="fname" name="fname" value="Ariangelo" required><br><br>
     
-    <p>Se você clicar no botão "Confirmar", os dados do formulário serão enviados para uma página chamada /action_page.php.</p>
-  </body>
+    <label for="lname">Sobrenome:</label><br>
+    <input type="text" id="lname" name="lname" value="Hauer Dias" required><br><br>
+    
+    <input type="submit" value="Confirmar">
+  </form>
+  
+  <p>Se você clicar no botão "Confirmar", os dados do formulário serão enviados para uma página chamada <code>/action_page.php</code>.</p>
+</body>
 </html>
